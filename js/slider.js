@@ -17,7 +17,6 @@ jQuery(document).ready(function ($) {
 
         sliderContainer.css({width: slideWidth})
         slider.css({width: sliderUlWidth, marginLeft: - slideWidth})
-        lastSlide.prependTo('#slider ul');
     }
 
 
@@ -39,25 +38,24 @@ jQuery(document).ready(function ($) {
         });
     };
 
-    // Being called on mobile when the addressbar is hidden
-    // Check about touchmove event
     $( window ).resize(function() {
         styleSlider();
     })
 
     $('a.control_prev').click(function (event) {
         event.preventDefault()
-        confirm("Tem certeza? Spoiler alert");
+        confirm("Spoiler alert: Tem certeza? ");
         moveLeft();
     });
 
     $('a.control_next').click(function (event) {
         event.preventDefault()
-        confirm("Tem certeza? Spoiler alert");
+        confirm("Spoiler alert: Tem certeza? ");
         moveRight();
     });
 
     styleSlider();
+    lastSlide.prependTo('#slider ul');
 
 });    
 
