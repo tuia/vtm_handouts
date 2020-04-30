@@ -46,13 +46,13 @@ jQuery(document).ready(function ($) {
 
     $('a.control_prev').click(function (event) {
         event.preventDefault()
-        // confirm("Tem certeza? Spoiler alert");
+        confirm("Tem certeza? Spoiler alert");
         moveLeft();
     });
 
     $('a.control_next').click(function (event) {
         event.preventDefault()
-        // confirm("Tem certeza? Spoiler alert");
+        confirm("Tem certeza? Spoiler alert");
         moveRight();
     });
 
