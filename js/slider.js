@@ -18,8 +18,6 @@ jQuery(document).ready(function ($) {
         sliderContainer.css({width: slideWidth})
         slider.css({width: sliderUlWidth, marginLeft: - slideWidth})
         lastSlide.prependTo('#slider ul');
-
-        $("body").append("<p>styleSlider called</p>")
     }
 
 
@@ -41,6 +39,8 @@ jQuery(document).ready(function ($) {
         });
     };
 
+    // Being called on mobile when the addressbar is hidden
+    // Check about touchmove event
     $( window ).resize(function() {
         styleSlider();
     })
