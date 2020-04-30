@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Old Standard TT', serif;
+  text-align: center;
+}
+
+body {
+  background-color: #800000;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+h1 small {
+  font-size: 14px;
+  color: rgba(255,255,255, .5);
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  text-indent: .5em;
+  display: block;
+  margin-bottom: .8em;
+}
+
+p, input {
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+@media only screen and (min-width: 1023px) {
+  p, input {
+    font-size: 22px;
+    max-width: 960px;
+  }
+}
+
+
+
+/*FORM*/
+
+form {
+  display: flex;
+}
+
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  color: #fff;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+[placeholder]::-webkit-input-placeholder { color: rgba(255,255,255,.8); }
+[placeholder]:hover::-webkit-input-placeholder { color: rgba(255,255,255,.4); }
+[placeholder]:focus::-webkit-input-placeholder { color: transparent; }
+
+[placeholder]::-moz-placeholder { color: rgba(255,255,255,.8); }
+[placeholder]:hover::-moz-placeholder { color: rgba(255,255,255,.4); }
+[placeholder]:focus::-moz-placeholder { color: transparent; }
+
+[placeholder]:-ms-input-placeholder { color: rgba(255,255,255,.8); }
+[placeholder]:hover:-ms-input-placeholder { color: rgba(255,255,255,.4); }
+[placeholder]:focus:-ms-input-placeholder { color: transparent; }
+
+input[type="text"], button {
+  display: block;
+  margin: 0 0 20px;
+  padding: 16px 24px;
+  border: 1px solid rgba(0,0,0,.5);
+  background: rgba(0,0,0,.25);
+}
+
+button {
+  background: black;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/*SLIDER*/
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+#slider ul li {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
+  margin: 0;
+  min-width: 100vw;
+  min-height: 80vh;
+  text-align: center;
+}
+
+#slider ul li > *  {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.controls {
+  display: flex;
+}
+.controls a {
+  flex: 1;
+  padding: 24px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
