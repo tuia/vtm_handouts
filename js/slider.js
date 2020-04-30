@@ -13,12 +13,13 @@ jQuery(document).ready(function ($) {
         slides.css({width: "auto", "max-width": "100vw"})
 
         slideWidth = slides.width();
-        console.log(slideWidth)
         sliderUlWidth = slideCount * slideWidth;
 
         sliderContainer.css({width: slideWidth})
         slider.css({width: sliderUlWidth, marginLeft: - slideWidth})
         lastSlide.prependTo('#slider ul');
+
+        $("body").append("<p>styleSlider called</p>")
     }
 
 
