@@ -158,3 +158,8 @@ button {
   align-items: center;
   justify-content: center;
 }
+.controls a.disabled {
+  pointer-events: none;
+  cursor: disabled;
+  opacity: .1;
+}

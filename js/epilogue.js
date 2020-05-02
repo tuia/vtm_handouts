@@ -1,14 +1,5 @@
 
-var characters = [
-	"ramon-humanidade",
-	"rafael-humanidade",
-	"anthony-humanidade",
-	"bacteria-humanidade",
-	"ramon-besta",
-	"rafael-besta",
-	"anthony-besta",
-	"bacteria-besta",
-];
+var characters = ["ramon", "rafael", "anthony", "bacteria"];
 
 $("#char_form").submit( function(event){
 
@@ -18,7 +9,7 @@ $("#char_form").submit( function(event){
 		currentUrl =  window.location.href,
 		lastIndex = currentUrl.lastIndexOf("/"),
 		path = currentUrl.substring(0, lastIndex),
-		newUrl = path + "/epilogue/" + name + ".html";
+		newUrl = path + "/" + name + ".html";
 
 	event.preventDefault();
 
